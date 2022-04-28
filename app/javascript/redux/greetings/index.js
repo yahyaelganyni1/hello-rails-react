@@ -1,4 +1,4 @@
-import { showLoading, hideLoading } from "react-redux-loading-bar";
+// import { showLoading, hideLoading } from "react-redux-loading-bar";
 import * as API from "./api";
 
 const LOAD_RANDOM_GREETING = "greetings/random";
@@ -9,12 +9,12 @@ export const loadRandomGreeting = (payload) => ({
 });
 
 export const fetchRandomGreeting = () => async (dispatch) => {
-    dispatch(showLoading());
+    //   dispatch(showLoading());
 
     const data = await API.getRandomGreeting();
     dispatch(loadRandomGreeting(data));
 
-    dispatch(hideLoading());
+    //   dispatch(hideLoading());
 };
 
 const initialState = {
