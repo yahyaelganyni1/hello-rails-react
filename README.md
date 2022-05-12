@@ -5,6 +5,7 @@
 - Ruby on Rails
 - PostgreSQL
 - React
+- eslint
 
 ## Getting Started
 
